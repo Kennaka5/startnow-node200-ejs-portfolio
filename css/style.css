@@ -97,7 +97,7 @@ font-size: 20px;
 Page Profile
 **************************/
 .profile {
-  background-image: url("/css/Pictures/profile_Background.jpg");
+  background-image: url("/css/Pictures/Profile_Background.jpg");
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -193,7 +193,7 @@ Contact
 .five {
 	font-size: 62.5%;
   font-family: Helvetica, sans-serif;
-  background: url("/css/Pictures/profile_landing.jpg");
+  background: url("/css/Pictures/Profile_landing.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
