@@ -1,0 +1,292 @@
+/*************************
+General
+**************************/
+img {
+  max-width: 100%;
+  }
+
+/*************************
+Cover
+**************************/
+
+.top {
+  background-image: url("/css/Pictures/profile_cover.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+.quickIntro{
+  text-align: center;
+  padding: 25%;
+  font-family: 'Alegreya', serif;  
+  font-size: 1.9em;
+  color: rgb(203, 125, 57);
+}
+
+.back {
+  background: rgb(0, 0, 0);
+  position: relative;
+  opacity: .7;
+  border-radius: 25px;
+}
+/*************************
+Navigation
+**************************/
+.nav-list{
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: .7;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-list li {
+  float: right;
+  padding-right: 1%;
+  padding-left: 1%;
+  color: white;
+  padding-top: 1%;
+}
+
+#name {
+  float: left;
+  color: rgb(203, 125, 57);
+  font-size: 20;
+  text-decoration: none;
+}
+
+.navlist li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.leftside {
+color:white;
+font-size: 20px;
+}
+
+.rightside{
+  font-size: 30px;
+  color: white;
+  padding-bottom: 1%;
+  border: solid;
+  border: 5px; 
+}
+
+.nav-list li a:hover {
+  background-color: #111;
+  text-decoration: none;
+}
+
+
+
+
+
+/*************************
+Page Profile
+**************************/
+.profile {
+  background-image: url("/css/Pictures/profile_Background.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+.profile h1 {
+  padding: 5%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.profile img {
+  display: block;
+  max-width: 50%;
+  max-height: 50%;
+  padding-left: 5%;
+  padding-right: 0;
+  margin: 0 auto;
+  vertical-align: top;
+  /* border-style: groove;
+  border-width: 7px; */
+}
+
+.profile p {
+  
+  width: 100%;
+  color: white;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+  font-size: 20px;
+}
+.three:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*************************
+Page: portfolio
+**************************/
+#portfolio {
+background: black;
+background-size: 100%;
+width: 100vw;
+height: 100vh;
+}
+
+#portfolio h1 {
+  padding-top: 10%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+  }
+  
+  .gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+  max-width: 60%;
+  text-decoration: none
+  }
+  
+  .gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+    text-decoration: none
+}
+
+/*************************
+Contact
+**************************/
+.five {
+	font-size: 62.5%;
+  font-family: Helvetica, sans-serif;
+  background: url("/css/Pictures/profile_landing.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  padding: 0;
+  border: green;
+}
+
+h3 {
+  padding-top: 10%;
+  text-align: center; 
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+label {
+color: white;
+text-align: center;
+font-size: 15;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px
+}
+
+input[type=submit]:hover {
+  background-color: #686868;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+/*************************
+Media queries
+**************************/
+
+/* iPhone 5 ----------- */
+@media screen and  (max-width: 375px) {
+  
+.rightside {
+  font-size: .8em;
+}
+
+.leftside {
+  font-size: .9em 
+}
+
+  .quickIntro {
+    font-size: auto;
+  }
+
+  .profile h1 {
+    padding-top: 11%;
+  }
+
+  .profile img {
+    height: auto;
+    width: 49%;
+}
+.profile p {
+  display: block;
+  width: 90%;
+  font-size: .9em
+}
+
+.gallery{
+  padding-left: 25%;
+}
+
+.gallery li {
+  width: 90%;
+}
+
+} 

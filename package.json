@@ -1,0 +1,30 @@
+{
+  "name": "startnow-node200-ejs-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kennaka5/startnow-node200-ejs-portfolio.git"
+  },
+  "author": "Ken Nakayama <kennaka5@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kennaka5/startnow-node200-ejs-portfolio/issues"
+  },
+  "homepage": "https://github.com/Kennaka5/startnow-node200-ejs-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "twilio": "^3.10.0"
+  },
+  "engines": {
+    "node": "8.5.0"
+  }
+}

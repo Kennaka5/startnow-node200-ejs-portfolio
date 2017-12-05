@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:500|Anton|Noticia+Text:400,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title> Kenny's Portfolio </title>
+</head>
+
+<body>
+    <div class="wrapper">
+            <header>
+            <section class="top" id="top">
+                <%# cover page %>
+                    <ul class='nav-list'>
+                        <li id="name">
+                            <a class="rightside" href="#top"=>Kenny Nakayama</a>
+                        </li>
+                        <div>
+                        <li>
+                            <a class="leftside" href="#contact-area">Contact</a>
+                        </li>
+                        <li>
+                            <a class="leftside" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="leftside" href="#profile">Profile</a>
+                        </li>
+                        </div>
+                    </ul>
+                    <h2 class='quickIntro'>
+                        <div class='back'>
+                        Welcome, my name is Kenny. I'm a full stack web-developer. Please scroll down to see some of my projects and learn more about
+                        me.
+                    </div>
+                    </h2>
+                </section>
+            </header>
+                <section id="profile" class="profile">
+                <%# profile %>
+                    <h1>About me</h1>
+                    <img src="./css/Pictures/Professional.jpg" alt="">
+                    <p>
+                        I am currently finishing up my last assignments at Origin Code Academy to become a full stack developer. I have a have a
+                        heavy interest in working and creating restful api's. I believe that information can continuously
+                        become simpler to understand. Most of my professional career has been in politics and civil government.
+                        With my new found knowledge I like to take on projects that help make information easier to find
+                        and simpler to navigate.
+                    </p>
+                </section>
+            </div>
+            <div class="four">
+                <section id="portfolio">
+                <%# portfolio %>
+                    <h1>Portfolio</h1>
+                    <ul class="gallery">
+                        <li>
+                            <a href="https://kn-vstda.herokuapp.com/">
+                                <img src="./css/Pictures/AVerySimpleTodo.jpg" alt="">
+                                <p>This App will create store any todo you enter and prioritize it.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://knhacathon1.herokuapp.com/">
+                                <img src="./css/Pictures/FindaDoctor.jpg" alt="">
+                                <p>This app allows you to search for doctors in California</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+                <div class="five">
+            <section id="contact-area">
+                    <%# contact %>       
+                    <h3>Contact Me</h3>    
+                    <div class="container">
+                      <form action="/thanks" id="contact-form" method="POST">
+                        <label>First Name</label>
+                        <input type="text" name="firstname" placeholder="Your name..">
+                        <label>Last Name</label>
+                        <input type="text"  name="lastname" placeholder="Your last name..">
+                        <label>Email</label>
+                        <input type="text" name="eMail" placeholder="Email">
+                        <label for="lname">Comment</label>
+                        <textarea id="subject" name="notes" placeholder="Write something.." style="height:200px"></textarea>
+                        <input type="submit" value="Send it Over!">
+                      </form>
+                    </div>
+            </section>
+            </div>
+</body>
+
+</html>
