@@ -1,22 +1,60 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">Kenny Nakayama</a>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#top">Home </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#profile">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+{
+  "menu": [
+    {
+      "category": "Dinner",
+      "item_name": "Kitchen Burger",
+      "price": 24.99,
+      "description": "House Burger",
+      "quantity": 1
+    }
+  ],
+  "restaurant_name": "Prep Kitchen",
+  "address": "1160 India St, San Diego, CA 92101",
+  "phone_number": "619-398-8383",
+  "email": "http://prepkitchenlittleitaly.com/",
+  "description": "Serves artisanal, farm-to-table cuisine and is open for lunch and dinner daily, as well as brunch on the weekends, which includes happy hour drinks.",
+  "food_type": "American",
+  "wait_time": "60mins",
+  "hours_of_operation": "11:30AM–9PM"
+  "id": "5a565345d5bd745f336191c4"
+}
+
+{
+  "menu": [
+    {
+      "category": "Dinner",
+      "item_name": "Veal Parmigiana",
+      "price": 21.25,
+      "description": "Breaded veal, smothered in our meat sauce, then topped with mozzarella cheese and baked.",
+      "quantity": 1
+    }
+  ],
+  "restaurant_name": "The Venetian Restaurant",
+  "address": "3663 Voltaire St, San Diego, CA 92106",
+  "phone_number": "619-223-8197",
+  "email": "http://www.venetian1965.com/Default.asp",
+  "description": "This little Italian Restaurant has stayed true to their family recipes for over forty years pleasing generations of families.",
+  "food_type": "Italian",
+  "wait_time": "60mins",
+  "hours_of_operation": "11AM–2PM, 4-9PM"
+}
+
+{
+  "menu": [
+    {
+      "category": "Lunch/Dinner",
+      "item_name": "Ton Katsu",
+      "price": 8.50,
+      "description": "Deep-fried breaded pork with Japanese steak sauce served with miso soup, rice, and salad",
+      "quantity": 1
+    }
+  ],
+  "restaurant_name": "ChopStix Japanese Noodles",
+  "address": "4633 Convoy St, San Diego, CA 92111",
+  "phone_number": "858-569-9171",
+  "email": "none",
+  "description": "Authentic Japanese cuisine at an affordable price",
+  "food_type": "Japanese",
+  "wait_time": "20mins",
+  "hours_of_operation": "11AM–10PM"
+}

@@ -1,16 +1,14 @@
 /*************************
 General
 **************************/
-img {
-  max-width: 100%;
-  }
+
 
 /*************************
 Cover
 **************************/
-
+/* 
 .top {
-  background-image: url("/css/Pictures/profile_cover.jpg");
+ background-image: url("/css/Pictures/profile_cover.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
@@ -18,22 +16,23 @@ Cover
   background-size: cover;
   background-attachment: fixed;
   padding: 0;
+}  */
+
+.top {
+overflow: hidden;
 }
 
-.quickIntro{
-  text-align: center;
-  padding: 25%;
-  font-family: 'Alegreya', serif;  
-  font-size: 1.9em;
-  color: rgb(203, 125, 57);
+
+#covertop {
+  min-width: 100%;
+  height: 100%;
+  border: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -100;
+  transform: scale(2);
 }
 
-.back {
-  background: rgb(0, 0, 0);
-  position: relative;
-  opacity: .7;
-  border-radius: 25px;
-}
 /*************************
 Navigation
 **************************/
@@ -43,52 +42,67 @@ Navigation
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  opacity: .7;
-  position: fixed;
   width: 100%;
+  position: absolute;
+  top: 1px;
+  text-align: center
 }
 
 .nav-list li {
-  float: right;
-  padding-right: 1%;
-  padding-left: 1%;
-  color: white;
-  padding-top: 1%;
+  display: inline;
+  padding-right: 3px;
+  padding-left: 3%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#name {
-  float: left;
-  color: rgb(203, 125, 57);
-  font-size: 20;
-  text-decoration: none;
-}
 
-.navlist li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.leftside {
+.centerNav {
 color:white;
 font-size: 20px;
 }
 
-.rightside{
-  font-size: 30px;
-  color: white;
-  padding-bottom: 1%;
-  border: solid;
-  border: 5px; 
-}
+
 
 .nav-list li a:hover {
-  background-color: #111;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  background: #f5f5f567;
+  border-radius: 25px;
+  padding: 6px;
 }
 
+.profileName {
+  position: absolute; 
+  left: 0;
+  top: 35%;
+  width: 100%;
+  margin-bottom: 1;
+  text-align: center;
+  color: white;
+}
+
+.profileName h1 {
+  font-size: 5em;
+  letter-spacing: 3px;
+  font-family: 'Merienda', cursive;
+  font-style: bold;
+}
+
+.profileName h2 {
+color: rgb(252, 252, 252);
+letter-spacing: 3px;
+padding-top: 50px;
+font-family: 'Merienda', cursive;
+font-style: bold;
+}
+
+.top input {
+  position: absolute;
+  background: black;
+  color: white;
+  bottom: 4%;
+  left: 47%;
+}
 
 
 
@@ -107,41 +121,91 @@ Page Profile
 }
 
 .profile h1 {
-  padding: 5%;
   text-align: center;
   color: white;
   margin: 0;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Merienda', cursive;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  display: block;
 }
 
-.profile img {
-  display: block;
-  max-width: 50%;
-  max-height: 50%;
-  padding-left: 5%;
+/* .profilePic {
+  max-height: 57%;
+  padding-left: 10px;
   padding-right: 0;
   margin: 0 auto;
   vertical-align: top;
-  /* border-style: groove;
-  border-width: 7px; */
+  border-radius: 50%;
+  box-shadow: 5px 10px 8px 10px #0c0c0c6b;
+  display: inline-block;
+  margin-left: 55px;
 }
 
-.profile p {
-  
+.profile div {
+  display: inline-block;
+  width: 60%;
+}
+
+.profile p {  
   width: 100%;
+  height: 29%;
   color: white;
-  padding-top: 5%;
-  padding-left: 5%;
+  padding-left: 10%;
   padding-right: 5%;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Noticia Text', serif;
-  font-size: 20px;
-}
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;}
+
 .three:after {
   content: "";
   display: table;
   clear: both;
+} */
+
+.flex-container {
+  display: flex;
+}
+
+.mySelf {
+  width: 50%;
+  padding: 0px 4%;
+}
+
+.myself h2 {
+text-align: center;
+color: white;
+margin-bottom: 9%;
+}
+
+.mySelf img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow:  9px 9px 9px 6px #150f0f9e;
+}
+ .myself p {
+   color: white;
+   width: 100%;
+   text-align: center;
+   margin-top: 10%;
+ }
+
+ .featuredProject {
+  width: 100%;
+  padding: 0px 4%;
+  border-radius: 2%;
+}
+
+.featuredProject h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.featuredProject img {
+  width: 100%;
+  box-shadow:  9px 9px 9px 6px #150f0f9e;
 }
 
 
@@ -157,13 +221,30 @@ height: 100vh;
 }
 
 #portfolio h1 {
-  padding-top: 10%;
+  padding-top: 5%;
   text-align: center;
   color: white;
   margin: 0;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Merienda', cursive;
 }
 
+.project-container {
+  display: flex;
+
+}
+
+.project {
+  width: 45%;
+  height: 45%;
+  margin: 3% 5%;
+  padding: 0 1%;
+}
+
+.project img {
+width: 100%;
+}
+
+/* 
 .gallery {
   margin: 0;
   padding: 0;
@@ -171,13 +252,15 @@ height: 100vh;
   }
   
   .gallery li {
-  float: left;
-  width: 45%;
+  display: inline-block;
+  width: 40%;
   margin: 2.5%;
   background-color: #f5f5f5;
   color: #bdc3c7;
-  max-width: 60%;
   text-decoration: none
+  }
+  .gallery img {
+    width: 100%
   }
   
   .gallery:after {
@@ -185,17 +268,17 @@ height: 100vh;
     display: table;
     clear: both;
     text-decoration: none
-}
+} */
 
 /*************************
 Contact
 **************************/
 .five {
 	font-size: 62.5%;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: url("/css/Pictures/Profile_landing.jpg");
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -209,13 +292,14 @@ h3 {
   padding-top: 10%;
   text-align: center; 
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Merienda', cursive;
 }
 
 label {
 color: white;
 text-align: center;
 font-size: 15;
+font-family: 'Open Sans', sans-serif;
 }
 
 input[type=text], textarea {
@@ -252,6 +336,49 @@ input[type=submit]:hover {
 Media queries
 **************************/
 
+/* first break -------- */
+@media screen and  (max-width: 1083px) {
+
+  .profileName h1 {
+  font-size: 3em
+}
+  .profileName h2 {
+
+  }
+}
+
+
+@media screen and  (max-width: 992px) {
+
+.profile img {
+  display: block;
+  padding: 0;
+  margin: auto;
+  width: 43%;
+}
+
+.profile P {
+  display: block;
+  font-size: 20;
+  width: 80%;
+  padding-top: 7px;
+}
+}
+
+/* Second Break ----------- */
+@media screen and  (max-width: 448px) {
+
+.profileName h1 {
+  font-size: 4em;
+}
+
+.profile P {
+  display: block;
+  font-size: 17px;
+  width: 80%;
+  padding-top: 15px;
+}
+}
 /* iPhone 5 ----------- */
 @media screen and  (max-width: 375px) {
   
