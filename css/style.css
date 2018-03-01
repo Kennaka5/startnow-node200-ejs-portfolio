@@ -166,6 +166,7 @@ Page Profile
 
 .flex-container {
   display: flex;
+  padding-top: 4%;
 }
 
 .mySelf {
@@ -180,9 +181,10 @@ margin-bottom: 9%;
 }
 
 .mySelf img {
-  width: 100%;
+  width: 85%;
   border-radius: 50%;
   box-shadow:  9px 9px 9px 6px #150f0f9e;
+  margin-left: 8%;
 }
  .myself p {
    color: white;
@@ -203,11 +205,212 @@ margin-bottom: 9%;
   margin-bottom: 5%;
 }
 
-.featuredProject img {
+/* .featuredProject img {
   width: 100%;
   box-shadow:  9px 9px 9px 6px #150f0f9e;
+} */
+/************************ new *******************/
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(7), 
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), 
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), 
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), 
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), 
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), 
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), 
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), 
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), 
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), 
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7),
+.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6),
+.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(1) 
+{
+  opacity: 1 !important;
+  z-index: 3;
 }
 
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item, 
+.carousel > input[type="radio"]:checked ~ .carousel__prev > label, .carousel > input[type="radio"]:checked ~ .carousel__next > label { opacity: 0; }
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+/*new slides*/
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) { opacity: 1; }
+
+.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+
+
+/*new slides*/
+.carousel__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
+.carousel__item img {
+  width: 100%;
+  vertical-align: middle;
+  max-height: 90%;
+  min-height: 90%;
+}
+
+.carousel_item img:hover {
+    opacity: 1;
+} 
+
+.carousel__prev > label, .carousel__next > label {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus { opacity: .5 !important; }
+
+.carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.carousel__prev > label:before, .carousel__next > label:before {
+  background: -webkit-linear-gradient(bottom, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),  -webkit-linear-gradient(right, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+  background: -o-linear-gradient(bottom, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),  -o-linear-gradient(right, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),  linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+  width: 60%;
+  height: 60%;
+  top: 20%;
+}
+
+.carousel__prev > label { left: 2%; }
+
+.carousel__prev > label:before {
+  left: 35%;
+  top: 20%;
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel__next > label { right: 2%; }
+
+.carousel__next > label:before {
+  left: 10%;
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+
+.carousel__nav {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.carousel__nav > label {
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 .125%;
+  width: 20px;
+  height: 20px;
+}
 
 
 /*************************
@@ -335,6 +538,50 @@ input[type=submit]:hover {
 /*************************
 Media queries
 **************************/
+@media screen and  (max-width: 1024px) {
+  .flex-container {
+    display: flex;
+    padding-top: 4%;
+    flex-direction: column;
+  }
+ 
+  .mySelf {
+    width: 100%;
+    padding: 0px 2%;
+}
+
+  .myself h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0%;
+}
+
+.mySelf img {
+  width: 40%;
+  border-radius: 50%;
+  box-shadow: 9px 9px 9px 6px #150f0f9e;
+  margin-left: 3%;
+  vertical-align: middle;
+}
+
+.myself p {
+  color: white;
+  width: 48%;
+  text-align: center;
+  margin-top: 6%;
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: middle;
+}
+
+.featuredProject {
+  width: 100%;
+  padding: 0px 4%;
+  border-radius: 2%;
+}
+
+}
+
 
 /* first break -------- */
 @media screen and  (max-width: 1083px) {
@@ -346,22 +593,10 @@ Media queries
 
   }
 }
-
-
-@media screen and  (max-width: 992px) {
-
-.profile img {
-  display: block;
-  padding: 0;
-  margin: auto;
-  width: 43%;
-}
-
-.profile P {
-  display: block;
-  font-size: 20;
-  width: 80%;
-  padding-top: 7px;
+/* ipad -------- */
+@media screen and  (max-width: 768px) {
+  .carousel {
+    height: 50%;
 }
 }
 
@@ -379,6 +614,69 @@ Media queries
   padding-top: 15px;
 }
 }
+
+@media screen and  (max-width: 414px) {
+
+  .flex-container {
+    display: flex;
+    padding-top: 4%;
+    flex-direction: column;
+  }
+ 
+  .mySelf {
+    width: 100%;
+    padding: 0px 2%;
+}
+
+  .myself h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0%;
+    font-size: 24px;
+}
+
+.mySelf img {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 9px 9px 9px 6px #150f0f9e;
+  margin-left: 25%;
+  vertical-align: middle;
+  margin-top: 4%;
+}
+
+.myself p {
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin-top: 0%;
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.featuredProject h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+  font-size: 22px;
+}
+
+.featuredProject {
+  width: 100%;
+  padding: 0px 4%;
+  border-radius: 2%;
+}
+
+.carousel__item img {
+    width: 100%;
+    vertical-align: middle;
+    /* max-height: 82%; */
+    min-height: 34%;
+}
+
+  }
+
 /* iPhone 5 ----------- */
 @media screen and  (max-width: 375px) {
   
