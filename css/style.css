@@ -22,6 +22,10 @@ Cover
 overflow: hidden;
 }
 
+a {
+  text-shadow: none;
+}
+
 
 #covertop {
   min-width: 100%;
@@ -130,39 +134,6 @@ Page Profile
   display: block;
 }
 
-/* .profilePic {
-  max-height: 57%;
-  padding-left: 10px;
-  padding-right: 0;
-  margin: 0 auto;
-  vertical-align: top;
-  border-radius: 50%;
-  box-shadow: 5px 10px 8px 10px #0c0c0c6b;
-  display: inline-block;
-  margin-left: 55px;
-}
-
-.profile div {
-  display: inline-block;
-  width: 60%;
-}
-
-.profile p {  
-  width: 100%;
-  height: 29%;
-  color: white;
-  padding-left: 10%;
-  padding-right: 5%;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;}
-
-.three:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 .flex-container {
   display: flex;
@@ -181,10 +152,10 @@ margin-bottom: 9%;
 }
 
 .mySelf img {
-  width: 85%;
+  width: 58%;
   border-radius: 50%;
-  box-shadow:  9px 9px 9px 6px #150f0f9e;
-  margin-left: 8%;
+  box-shadow: 9px 9px 9px 6px #150f0f9e;
+  margin-left: 23%;
 }
  .myself p {
    color: white;
@@ -197,12 +168,20 @@ margin-bottom: 9%;
   width: 100%;
   padding: 0px 4%;
   border-radius: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .featuredProject h2 {
   text-align: center;
   color: white;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
+}
+
+.featuredProject a {
+
 }
 
 /* .featuredProject img {
@@ -210,214 +189,73 @@ margin-bottom: 9%;
   box-shadow:  9px 9px 9px 6px #150f0f9e;
 } */
 /************************ new *******************/
-
-.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(7), 
-.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), 
-.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), 
-.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), 
-.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), 
-.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), 
-.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), 
-.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), 
-.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), 
-.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(6), 
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__prev > label:nth-child(5),
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__next > label:nth-child(7),
-.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__prev > label:nth-child(6),
-.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__next > label:nth-child(1) 
-{
-  opacity: 1 !important;
-  z-index: 3;
-}
-
-.carousel {
+.featuredProject img {
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  box-shadow:  9px 9px 9px 6px #150f0f9e;
+  height: 70%;
+  border-radius: 2%;
 }
 
-.carousel > input[type="radio"] {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  top: 0;
-}
-
-.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item, 
-.carousel > input[type="radio"]:checked ~ .carousel__prev > label, .carousel > input[type="radio"]:checked ~ .carousel__next > label { opacity: 0; }
-
-.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-/*new slides*/
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__items .carousel__item:nth-child(6) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(6):checked ~ .carousel__nav > label:nth-child(6) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__items .carousel__item:nth-child(7) { opacity: 1; }
-
-.carousel > input[type="radio"]:nth-child(7):checked ~ .carousel__nav > label:nth-child(7) {
-  background: #ccc;
-  cursor: default;
-  pointer-events: none;
-}
-
-
-
-/*new slides*/
-.carousel__items {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  height: 600px;
-  position: relative;
-}
-
-.carousel__item {
-  position: absolute;
-  top: 0;
-  left: 0;
+.container-flip {
+  margin: 20px;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  -o-transition: opacity 2s;
-  transition: opacity 2s;
-  -webkit-transition: opacity 2s;
 }
 
-.carousel__item img {
-  width: 100%;
-  vertical-align: middle;
-  max-height: 90%;
-  min-height: 90%;
-}
-
-.carousel_item img:hover {
-    opacity: 1;
-} 
-
-.carousel__prev > label, .carousel__next > label {
-  border: 1px solid #fff;
-  border-radius: 50%;
+.card {
+  transition: transform 2s;
+  transform-style: preserve-3d;
   cursor: pointer;
-  display: block;
-  width: 40px;
-  height: 40px;
+  background: none;
+}
+.front {
+  background-color: slategray;
+  border-radius: 2%;
+}
+
+
+.front, .back {
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.front:hover {
+  bottom: 2px;
+  left: 2px;
+  box-shadow: 0px 0px 20px 1px #000;
+}
+
+
+
+.back {
+  background: slategray;
+  transform: rotateY(180deg);
   position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  opacity: 0;
-  z-index: 2;
-}
-
-.carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus { opacity: .5 !important; }
-
-.carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-}
-
-.carousel__prev > label:before, .carousel__next > label:before {
-  background: -webkit-linear-gradient(bottom, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),  -webkit-linear-gradient(right, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-  background: -o-linear-gradient(bottom, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),  -o-linear-gradient(right, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),  linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
-  width: 60%;
-  height: 60%;
-  top: 20%;
-}
-
-.carousel__prev > label { left: 2%; }
-
-.carousel__prev > label:before {
-  left: 35%;
-  top: 20%;
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.carousel__next > label { right: 2%; }
-
-.carousel__next > label:before {
-  left: 10%;
-  -ms-transform: rotate(315deg);
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}
-
-.carousel__nav {
-  position: absolute;
-  bottom: 3%;
-  left: 0;
+  /* bottom: 23em; */
+  height: 50%;
+  color: white;
   text-align: center;
-  width: 100%;
-  z-index: 3;
+  top: 0;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
 }
 
-.carousel__nav > label {
-  border: 1px solid #fff;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 0 .125%;
-  width: 20px;
-  height: 20px;
+.back ol {
+  list-style:  disc;
+  text-align: left;
 }
+
+
+
+
 
 
 /*************************
 Page: portfolio
 **************************/
 #portfolio {
-background: black;
+background: linear-gradient(#010101, #474747de);
 background-size: 100%;
 width: 100vw;
 height: 100vh;
@@ -433,11 +271,14 @@ height: 100vh;
 
 .project-container {
   display: flex;
-
+  flex-direction: row;
+  padding-right: 1%;
+  padding-left: 5%;
+  margin-top: 1%;
 }
 
 .project {
-  width: 45%;
+  width: 85%;
   height: 45%;
   margin: 3% 5%;
   padding: 0 1%;
@@ -445,33 +286,38 @@ height: 100vh;
 
 .project img {
 width: 100%;
+height: 130%;
 }
 
-/* 
-.gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;  
-  }
+.pcard {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  background: none;
+}
+
+
+.project, .project-info {
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.project-info {
+  background-color: slategray;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  margin: 3% 5%;
+  padding: 0 1%;
+  height: 113%;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+.project-info a {
   
-  .gallery li {
-  display: inline-block;
-  width: 40%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
-  text-decoration: none
-  }
-  .gallery img {
-    width: 100%
-  }
-  
-  .gallery:after {
-    content: "";
-    display: table;
-    clear: both;
-    text-decoration: none
-} */
+}
 
 /*************************
 Contact
@@ -557,7 +403,7 @@ Media queries
 }
 
 .mySelf img {
-  width: 40%;
+  width: 25%;
   border-radius: 50%;
   box-shadow: 9px 9px 9px 6px #150f0f9e;
   margin-left: 3%;
@@ -568,9 +414,9 @@ Media queries
   color: white;
   width: 48%;
   text-align: center;
-  margin-top: 6%;
+  margin-top: 1%;
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 12%;
   vertical-align: middle;
 }
 
@@ -578,6 +424,45 @@ Media queries
   width: 100%;
   padding: 0px 4%;
   border-radius: 2%;
+}
+
+.featuredProject img {
+  height: 49%;
+}
+
+.featuredProject h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.carousel {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  height: 50%;
+  margin-left: 10%;
+}
+
+.card {
+
+}
+  .front {
+    width: 88%;
+    margin-left: 7%;
+}
+.project-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0%;
+  padding-right: 0;
+}
+
+.project {
+
+}
+.project img {
+
 }
 
 }
@@ -612,6 +497,13 @@ Media queries
   font-size: 17px;
   width: 80%;
   padding-top: 15px;
+}
+
+.featuredProject img {
+  height: 27%;
+}
+.project-info {
+  height: 81%;
 }
 }
 
@@ -652,7 +544,7 @@ Media queries
   display: inline-block;
   margin-left: 5%;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .featuredProject h2 {
@@ -668,12 +560,42 @@ Media queries
   border-radius: 2%;
 }
 
+.back p {
+  font-size: x-small;
+  text-align: center;
+  padding-left: 5%;
+  height: 113%;
+  position: relative;
+  left: 7%;
+  bottom: 9%;
+}
+.back ol {
+  font-size: .1px;
+}
+
 .carousel__item img {
     width: 100%;
     vertical-align: middle;
     /* max-height: 82%; */
     min-height: 34%;
 }
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0%;
+  padding-right: 0;
+}
+
+.project img {
+  height: 65%;
+}
+.project {
+  width: 85%;
+  height: 40%;
+  margin: 8% 5% 1% 5%;
+  padding: 0 1%;
+}
+
 
   }
 
@@ -703,7 +625,7 @@ Media queries
 .profile p {
   display: block;
   width: 90%;
-  font-size: .9em
+  font-size: 12px;
 }
 
 .gallery{
@@ -713,5 +635,26 @@ Media queries
 .gallery li {
   width: 90%;
 }
+.container-flip {
+  margin: 0;
+}
 
+.featuredProject img {
+    width: 112%;
+    height: 30%;
+    margin-left: -20px;
+}
+.back {
+  font-size: xx-small;
+}
+.back ol {
+  display: hidden;
+}
+} 
+
+@media screen and  (max-width: 360px) {
+
+.featuredProject img {
+  height: 27%;
+}
 } 

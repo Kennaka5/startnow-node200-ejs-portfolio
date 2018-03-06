@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 app.use("/css", express.static(__dirname + "/css"));
+app.use("/js", express.static(__dirname + "/js"));
 app.use("/Pictures", express.static(__dirname + "/Pictures"));
 
 app.set('port', (process.env.PORT || 8080));

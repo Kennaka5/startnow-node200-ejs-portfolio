@@ -13,17 +13,17 @@
 
 <body>
     <div class="wrapper">
-            <section class="top" id="top">
-                <%# cover page %>
+        <section class="top" id="top">
+            <%# cover page %>
                 <header>
                 </header>
                 <video autoplay muted loop id="covertop" src="../css/Pictures/Lake.mp4" type="video/mp4">
                 </video>
                 <ul class='nav-list'>
-                        <li id="name">
-                            <!-- <a class="rightside" href="#top"=>Kenny Nakayama</a> -->
-                        </li>
-                        <div>
+                    <li id="name">
+                        <!-- <a class="rightside" href="#top"=>Kenny Nakayama</a> -->
+                    </li>
+                    <div>
                         <li>
                             <a class="centerNav" href="#contact-area">Contact</a>
                         </li>
@@ -33,118 +33,131 @@
                         <li>
                             <a class="centerNav" href="#profile">Profile</a>
                         </li>
-                        </div>
-                    </ul>
-                    <div class="profileName">
+                    </div>
+                </ul>
+                <div class="profileName">
                     <h1>Kenneth Nakayama</h1>
                     <h2>Full Stack Developer</h2>
-                    </div>
-                    <button>Transiton Test</button>
-                </section>
-                <section id="profile" class="profile">
-                <%# profile %>
-                    <div class="flex-container">
+                </div>
+                <button>Transiton Test</button>
+        </section>
+        <section id="profile" class="profile">
+            <%# profile %>
+                <div class="flex-container">
                     <div class='mySelf'>
                         <h2>About Me</h2>
-                    <img  class="profilePic" src="./css/Pictures/Professional.jpg" alt="">
-                    <p>
-                        I am currently finishing up my last assignments at Origin Code Academy to become a full stack developer. I have a have a
-                        heavy interest in working and creating restful api's. I believe that information can continuously
-                        become simpler to understand. Most of my professional career has been in politics and civil government.
-                        With my new found knowledge I like to take on projects that help make information easier to find
-                        and simpler to navigate.
-                    </p>
-                    </div> 
+                        <img class="profilePic" src="./css/Pictures/Professional.jpg" alt="">
+                        <p>
+                            I am currently finishing up my last assignments at Origin Code Academy to become a full stack developer. I have a have a
+                            heavy interest in working and creating restful api's. I believe that information can continuously
+                            become simpler to understand. Most of my professional career has been in politics and civil government.
+                            With my new found knowledge I like to take on projects that help make information easier to find
+                            and simpler to navigate.
+                        </p>
+                    </div>
                     <div class="featuredProject">
                         <h2>My Featured Project</h2>
-                        <div class="carousel">
-                            <input type="radio" id="carousel-1" name="carousel" checked>
-                            <input type="radio" id="carousel-2" name="carousel">
-                            <input type="radio" id="carousel-3" name="carousel">
-                            <input type="radio" id="carousel-4" name="carousel">
-                            <input type="radio" id="carousel-5" name="carousel">
-                            <input type="radio" id="carousel-6" name="carousel">
-                            <input type="radio" id="carousel-7" name="carousel">
-                            <ul class="carousel__items">
-                                <li class="carousel__item"><img src="./css/Pictures/Polli_screenshot.jpg" alt=""></li>
-                                <li class="carousel__item"><img src="./css/Pictures/AdminDashboard.jpg" alt=""></li>
-                                <li class="carousel__item"><img src="./css/Pictures/SurveyDashboard.jpg" alt=""></li>
-                                <li class="carousel__item"><img src="./css/Pictures/VisitorDashboard.jpg" alt=""></li>
-                                <li class="carousel__item"><img src="./css/Pictures/Survey.jpg" alt=""></li>
-                                <li class="carousel__item"><img src="./css/Pictures/Publish.jpg" alt=""></li>
-                                <li class="carousel__item"><img src="./css/Pictures/SurveyResults.jpg" alt=""></li>
-                            </ul>
-                            <div class="carousel__prev">
-                                <label for="carousel-1"></label>
-                                <label for="carousel-2"></label>
-                                <label for="carousel-3"></label>
-                                <label for="carousel-4"></label>
-                                <label for="carousel-5"></label>
-                                <label for="carousel-6"></label>
-                                <label for="carousel-7"></label>
+                        <div class="container-flip">
+                            <div class="card" onclick="flip(event)">
+                                <div class="front">
+                                    <img src="./css/Pictures/Polli_screenshot.jpg" alt="">
+                                </div>
+                                <div class="back">
+                                    <h2>Polli</h2>
+                                    <p>This is a web application built in React Redux, with a MongoDB database. “Polli” designed
+                                        as a polling app for Instructors to measure the opinion of students in the course.
+                                        I built this app all on my own.</p>
+                                    <ol>
+                                        <li>
+                                            Instructors are able to create and publish surveys for students to interact with.
+                                        </li>
+                                        <li>
+                                            Students are able to see published surveys and respond to there corresponding question.
+                                        </li>
+                                        <li>
+                                            While students are filling out the surveys instructors can read the ongoing tally of the results on there dashboard.
+                                        </li>
+                                    </ol>
+                                    <a href="https://kn-polli.herokuapp.com/">
+                                        Checkout the App!
+                                    </a>
+                                    <a href="https://github.com/Kennaka5/Polli">
+                                            Checkout my code on github!
+                                    </a>
+                                </div>
                             </div>
-                            <div class="carousel__next">
-                                <label for="carousel-1"></label>
-                                <label for="carousel-2"></label>
-                                <label for="carousel-3"></label>
-                                <label for="carousel-4"></label>
-                                <label for="carousel-5"></label>
-                                <label for="carousel-6"></label>
-                                <label for="carousel-7"></label>
-                            </div>
-                            <div class="carousel__nav">
-                                <label for="carousel-1"></label>
-                                <label for="carousel-2"></label>
-                                <label for="carousel-3"></label>
-                                <label for="carousel-4"></label>
-                                <label for="carousel-5"></label>
-                                <label for="carousel-6"></label>
-                                <label for="carousel-7"></label>
-                            </div>
-                          </div>
+                        </div>
                     </div>
-                </div>
-                </section>
-            </div>
-            <div class="four">
-                <section id="portfolio">
+        </section>
+        </div>
+        <div class="four">
+            <section id="portfolio">
                 <%# portfolio %>
                     <h1>Portfolio</h1>
-                            <!-- <a href="https://kn-vstda.herokuapp.com/"> -->
-                                <div class=project-container>
-                                    <div class="project">
-                                <img src="./css/Pictures/AVerySimpleTodo.jpg" alt="">
+                    <!-- <a href="https://kn-vstda.herokuapp.com/"> -->
+                    <div class=project-container>
+                        <div class="pcard" onclick="flipProjects(event)">
+                            <div class="project">
+                                <img src="./css/Pictures/dst.png" alt="">
                                 <!-- <p>This App will create store any todo you enter and prioritize it.</p>
                             </a> -->
-                                    </div>
-                                    <div class="project">
-                            <!-- <a href="https://knhacathon1.herokuapp.com/"> -->
-                                <img src="./css/Pictures/FindaDoctor.jpg" alt="">
+                            </div>
+                            <div class="project-info">
+                                    <h2>Door Stop Foods</h2>
+                                    <p>This project was built with React.js, React Redux, and MongoDB as the database.  It is a replica of the Web application Postmates. 
+                                        Customers can enter there location, see restuarants within there proximity, and order food and drinks.  There is also a 
+                                        restaurant owner user interface that allows owners to add restaurats and menu items. 
+                                    </p>
+                                    <a href="https://dts-doorstopfood.herokuapp.com/">
+                                        Checkout the App!
+                                    </a>
+                                    <a href="https://github.com/Kennaka5/DST-Food">
+                                            Checkout my code on github!
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="pcard" onclick="flipProjects(event)">
+                            <div class="project">
+                                <!-- <a href="https://knhacathon1.herokuapp.com/"> -->
+                                <img src="./css/Pictures/Find-a-Doctor.png" alt="">
                                 <!-- <p>This app allows you to search for doctors in California</p> -->
-                            <!-- </a> -->
-                                </div>
-                    </div>
-                </section>
-            </div>
-                <div class="five">
-            <section id="contact-area">
-                    <%# contact %>       
-                    <h3>Contact Me</h3>    
-                    <div class="container">
-                      <form action="/thanks" id="contact-form" method="POST">
-                        <label>First Name</label>
-                        <input type="text" name="firstname" placeholder="Your name..">
-                        <label>Last Name</label>
-                        <input type="text"  name="lastname" placeholder="Your last name..">
-                        <label>Email</label>
-                        <input type="text" name="eMail" placeholder="Email">
-                        <label for="lname">Comment</label>
-                        <textarea id="subject" name="notes" placeholder="Write something.." style="height:200px"></textarea>
-                        <input type="submit" value="Send it Over!">
-                      </form>
+                            </div>
+                            <div class="project-info">
+                                <h2>Find-a-doctor</h2>
+                               <p>This project was built in React.js.  It utilizes the public Good Doctor API, and the Google Maps API.
+                                   Users are able to select a city and a doctor's medical specialty to locate doctors all around the state of California.
+                               </p>
+                               <a href="https://knhacathon1.herokuapp.com/">
+                                Checkout the App!
+                                </a>
+                                <a href="https://github.com/Kennaka5/Hackathon-1-">
+                                    Checkout my code on github!
+                                </a>
+                            </div>
+                        </div>
                     </div>
             </section>
-            </div>
+        </div>
+        <div class="five">
+            <section id="contact-area">
+                <%# contact %>
+                    <h3>Contact Me</h3>
+                    <div class="container">
+                        <form action="/thanks" id="contact-form" method="POST">
+                            <label>First Name</label>
+                            <input type="text" name="firstname" placeholder="Your name..">
+                            <label>Last Name</label>
+                            <input type="text" name="lastname" placeholder="Your last name..">
+                            <label>Email</label>
+                            <input type="text" name="eMail" placeholder="Email">
+                            <label for="lname">Comment</label>
+                            <textarea id="subject" name="notes" placeholder="Write something.." style="height:200px"></textarea>
+                            <input type="submit" value="Send it Over!">
+                        </form>
+                    </div>
+            </section>
+        </div>
+        <script src="/js/Script.js" charset="utf-8"></script>
 </body>
 
 </html>
