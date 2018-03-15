@@ -1,8 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const dotenv = require('dotenv')
-dotenv.config();
+const dotenv = require('dotenv').load()
+// dotenv.config();
 
 var client = require('twilio')(process.env.DB_TWID, process.env.DB_APIKEY);
 const app = express();
