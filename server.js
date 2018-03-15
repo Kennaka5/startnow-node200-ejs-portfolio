@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv')
 dotenv.config();
 
-var client = require('twilio')(process.env.DB_TWID, process.env.DB_APIKEY);
+var client = require('twilio')(process.env.DB_TWID, process.env.DB_APIKEY, process.env.USERNAME);
 const app = express();
 
 app.use(morgan('dev'))
