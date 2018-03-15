@@ -142,7 +142,7 @@ Page Profile
 
 .mySelf {
   width: 50%;
-  padding: 0px 4%;
+  padding: 0px 1%;
 }
 
 .myself h2 {
@@ -152,16 +152,18 @@ margin-bottom: 9%;
 }
 
 .mySelf img {
-  width: 58%;
+  width: 80%;
   border-radius: 50%;
   box-shadow: 9px 9px 9px 6px #150f0f9e;
-  margin-left: 23%;
+  margin: 0px 12%;
 }
  .myself p {
-   color: white;
-   width: 100%;
-   text-align: center;
-   margin-top: 10%;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+  font-size: 23px;
+  margin-left: 3%;
  }
 
  .featuredProject {
@@ -181,7 +183,12 @@ margin-bottom: 9%;
 }
 
 .featuredProject a {
-
+  background: black;
+  padding: 7px;
+  margin: 0px 5px 0px 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
 }
 
 /* .featuredProject img {
@@ -192,13 +199,13 @@ margin-bottom: 9%;
 .featuredProject img {
   width: 100%;
   box-shadow:  9px 9px 9px 6px #150f0f9e;
-  height: 70%;
-  border-radius: 2%;
+  height: 50%;
+  border-radius: 30px;
 }
 
 .container-flip {
   margin: 20px;
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 
@@ -224,6 +231,7 @@ margin-bottom: 9%;
   bottom: 2px;
   left: 2px;
   box-shadow: 0px 0px 20px 1px #000;
+  border-radius: 30px;
 }
 
 
@@ -239,17 +247,31 @@ margin-bottom: 9%;
   top: 0;
   height: 100%;
   text-shadow: 2px 2px #000000;
+  border-radius: 30px;
+}
+
+.back h2 {
+  font-size: 64px;
+  margin-top: 7px;
+}
+
+.back p {
+  font-size: 26px;
+  padding: 0px 10px 0px 10px;
 }
 
 .back ol {
-  list-style:  disc;
+  list-style: disc;
   text-align: left;
+  font-size: 24px;
+  margin-bottom: 60px;
+  padding: 0px 70px 0px 100px;
 }
 
-
-
-
-
+.back a {
+  font-size: 30px;
+  margin: 0px 55px;
+}
 
 /*************************
 Page: portfolio
@@ -273,7 +295,7 @@ height: 100vh;
   display: flex;
   flex-direction: row;
   padding-right: 1%;
-  padding-left: 5%;
+  padding-left: 1%;
   margin-top: 1%;
 }
 
@@ -286,7 +308,8 @@ height: 100vh;
 
 .project img {
 width: 100%;
-height: 130%;
+height: 100%;
+border-radius: 30px;
 }
 
 .pcard {
@@ -314,9 +337,27 @@ height: 130%;
   color: white;
   text-align: center;
   text-shadow: 2px 2px #000000;
+  border-radius: 30px;
 }
+
+.project-info h2 {
+  margin-top: 37px;
+  font-size: 50px;
+}
+
+.project-info p {
+  font-size: 30px;
+  padding: 50px 10px;
+} 
+
 .project-info a {
-  
+  background: black;
+  padding: 7px;
+  margin: 0px 30px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 30px;
 }
 
 /*************************
@@ -384,6 +425,42 @@ input[type=submit]:hover {
 /*************************
 Media queries
 **************************/
+@media screen and  (max-width: 1100px) {
+  .back h2 {
+  }
+  
+  .back p {
+  }
+  .back ol {
+  }
+  
+  .back a {
+
+  }
+  
+  .carousel__item img {
+
+  }
+  .project-container {
+  }
+  
+  .project img {
+  }
+  .project {
+  }
+  .project info {
+  }
+  
+  .project-info h2 {
+  }
+  
+  .project-info p {
+  }
+  
+  .project-info a {
+  }
+}
+
 @media screen and  (max-width: 1024px) {
   .flex-container {
     display: flex;
@@ -433,7 +510,28 @@ Media queries
 .featuredProject h2 {
   text-align: center;
   color: white;
-  margin-bottom: 2%;
+  margin-bottom: 0;
+}
+
+.back h2 {
+  font-size: 33px;
+  margin-top: 21px;
+}
+
+.back p {
+  font-size: 24px;
+  padding-top: 11px;
+  padding-bottom: 4px;
+}
+
+.back ol {
+  font-size: 19px;
+  padding: 0px 52px;
+  margin-bottom: 18px;
+}
+
+.back a {
+  font-size: 21px;
 }
 
 .carousel {
@@ -465,19 +563,24 @@ Media queries
 
 }
 
+
+.project-info h2 {
+  font-size: 39px;
+  margin-top: 27px;
 }
 
-
-/* first break -------- */
-@media screen and  (max-width: 1083px) {
-
-  .profileName h1 {
-  font-size: 3em
+.project-info p {
+  font-size: 17px;
+  padding-top: 10px;
 }
-  .profileName h2 {
 
-  }
+.project-info a {
+  font-size: 15px;
+  margin: 0px 12px;
 }
+
+}
+
 /* ipad -------- */
 @media screen and  (max-width: 768px) {
   .carousel {
@@ -500,7 +603,8 @@ Media queries
 }
 
 .featuredProject img {
-  height: 27%;
+  height: 65%;
+  width: 100%
 }
 .project-info {
   height: 81%;
@@ -556,21 +660,34 @@ Media queries
 
 .featuredProject {
   width: 100%;
-  padding: 0px 4%;
+  padding: 0px 1%;
   border-radius: 2%;
+  height: 340px;
+
+}
+
+.back h2 {
+  margin-top: 3%;
 }
 
 .back p {
-  font-size: x-small;
+  font-size: 13px;
   text-align: center;
-  padding-left: 5%;
-  height: 113%;
+  padding-left: 0%;
+  height: 20%;
   position: relative;
-  left: 7%;
-  bottom: 9%;
+  left: 11%;
+  bottom: 5%;
+  width: 86%;
 }
 .back ol {
   font-size: .1px;
+  margin-bottom: 53px;
+}
+
+.back a {
+  font-size: 12px;
+  margin: 0px 12px;
 }
 
 .carousel__item img {
@@ -587,16 +704,32 @@ Media queries
 }
 
 .project img {
-  height: 65%;
+  height: 90%;
 }
 .project {
   width: 85%;
   height: 40%;
-  margin: 8% 5% 1% 5%;
+  margin: 8% 5% 1% 7%;
   padding: 0 1%;
 }
+.project info {
+  height: 90%
+}
 
+.project-info h2 {
+  font-size: 22px
+}
 
+.project-info p {
+  font-size: 12px;
+  margin: 1px 0px 20px 0px;
+  padding: 8px 7px;
+}
+
+.project-info a {
+  font-size: 11px;
+  margin: 0px 20px;
+}
   }
 
 /* iPhone 5 ----------- */
@@ -625,7 +758,7 @@ Media queries
 .profile p {
   display: block;
   width: 90%;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .gallery{
@@ -641,7 +774,7 @@ Media queries
 
 .featuredProject img {
     width: 112%;
-    height: 30%;
+    height: 50%;
     margin-left: -20px;
 }
 .back {
@@ -649,12 +782,76 @@ Media queries
 }
 .back ol {
   display: hidden;
+  margin-bottom: 20px;
 }
+.back h2 {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.back p {
+  font-size: 11px;
+  position: relative;
+  left: 33px;
+  margin: 0;
+  height: 73px;
+}
+
+
+
+.project-info h2 {
+  margin-top: 10px;
+}
+
+.project-info p {
+  font-size: 12px;
+  margin: 1px 0px 20px 0px;
+  padding: 8px 7px;
+}
+
+.project-info a {
+  font-size: 10px;
+}
+
 } 
 
 @media screen and  (max-width: 360px) {
 
 .featuredProject img {
-  height: 27%;
+  height: 50%;
+}
+.back p {
+  font-size: 10px;
+  position: relative;
+  left: 15px;
+  margin: 0;
+  height: 73px;
+  width: 100%;
+}
+
+.back ol {
+  margin: 0px 0px 18px 0px;
+}
+
+.back a {
+  font-size: 9px;
+  margin: 33px 8px 0px 8px;
+}
+
+.project-info h2 {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.project-info p {
+  font-size: 10px;
+  margin: 5px 0px 11px 0px;
+}
+
+.project-info a {
+  font-size: 9px;
+  margin: 0px 10px;
 }
 } 
