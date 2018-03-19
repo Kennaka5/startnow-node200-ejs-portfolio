@@ -138,48 +138,57 @@ Page Profile
 .flex-container {
   display: flex;
   padding-top: 4%;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .mySelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 50%;
-  padding: 0px 1%;
 }
 
-.myself h2 {
-text-align: center;
-color: white;
-margin-bottom: 9%;
+.mySelf h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
 }
 
 .mySelf img {
-  width: 80%;
+  display: flex;
+  justify-content: center;
+  width: 40%;
   border-radius: 50%;
-  box-shadow: 9px 9px 9px 6px #150f0f9e;
-  margin: 0px 12%;
+
 }
- .myself p {
+
+.mySelf p {
+  display: flex;
+  justify-content: center;
   color: white;
-  width: 100%;
+  width: 74%;
+  font-size: 20px;
   text-align: center;
-  margin-top: 1%;
-  font-size: 23px;
-  margin-left: 3%;
- }
+}
+
 
  .featuredProject {
-  width: 100%;
-  padding: 0px 4%;
+  width: 64%;
   border-radius: 2%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+
 }
 
 .featuredProject h2 {
   text-align: center;
   color: white;
   margin-bottom: 2%;
+  font-size: 40px;
 }
 
 .featuredProject a {
@@ -199,14 +208,14 @@ margin-bottom: 9%;
 .featuredProject img {
   width: 100%;
   box-shadow:  9px 9px 9px 6px #150f0f9e;
-  height: 50%;
+  height: 100%;
   border-radius: 30px;
 }
 
 .container-flip {
-  margin: 20px;
+  margin: 0px 2% 0px 0px;
   width: 95%;
-  height: 100%;
+  height: 50%;
 }
 
 .card {
@@ -214,6 +223,9 @@ margin-bottom: 9%;
   transform-style: preserve-3d;
   cursor: pointer;
   background: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .front {
   background-color: slategray;
@@ -248,6 +260,8 @@ margin-bottom: 9%;
   height: 100%;
   text-shadow: 2px 2px #000000;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .back h2 {
@@ -268,7 +282,13 @@ margin-bottom: 9%;
   padding: 0px 70px 0px 100px;
 }
 
-.back a {
+.back div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;  
+}
+
+.back   a {
   font-size: 30px;
   margin: 0px 55px;
 }
@@ -294,9 +314,8 @@ height: 100vh;
 .project-container {
   display: flex;
   flex-direction: row;
-  padding-right: 1%;
-  padding-left: 1%;
-  margin-top: 1%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project {
@@ -317,13 +336,17 @@ border-radius: 30px;
   transform-style: preserve-3d;
   cursor: pointer;
   background: none;
+  display: flex;
+  justify-content: center;
 }
 
 
 .project, .project-info {
+  display: flex;
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
+  flex-direction: column;
 }
 
 .project-info {
@@ -333,11 +356,13 @@ border-radius: 30px;
   top: 0;
   margin: 3% 5%;
   padding: 0 1%;
-  height: 113%;
+  height: 100%;
   color: white;
   text-align: center;
   text-shadow: 2px 2px #000000;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-info h2 {
@@ -347,17 +372,25 @@ border-radius: 30px;
 
 .project-info p {
   font-size: 30px;
-  padding: 50px 10px;
+  padding: 23px 10px;
 } 
+
+.project-info div {
+  display: flex;
+  flex-direction: row
+}
 
 .project-info a {
   background: black;
   padding: 7px;
-  margin: 0px 30px;
   text-decoration: none;
   color: white;
   border-radius: 12px;
-  font-size: 30px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1% 0px 1%;
+  align-items: center
 }
 
 /*************************
@@ -425,7 +458,7 @@ input[type=submit]:hover {
 /*************************
 Media queries
 **************************/
-@media screen and  (max-width: 1100px) {
+@media screen and  (max-width: 1366px) {
   .back h2 {
   }
   
@@ -464,271 +497,294 @@ Media queries
 @media screen and  (max-width: 1024px) {
   .flex-container {
     display: flex;
-    padding-top: 4%;
     flex-direction: column;
+    justify-content: center;
   }
  
   .mySelf {
     width: 100%;
     padding: 0px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
   .myself h2 {
     text-align: center;
     color: white;
-    margin-bottom: 0%;
+    margin-bottom: 2%;
 }
 
 .mySelf img {
-  width: 25%;
+  width: 40%;
   border-radius: 50%;
   box-shadow: 9px 9px 9px 6px #150f0f9e;
-  margin-left: 3%;
+  margin-left: 0%;
   vertical-align: middle;
 }
 
 .myself p {
   color: white;
-  width: 48%;
+  width: 69%;
   text-align: center;
   margin-top: 1%;
   display: inline-block;
-  margin-left: 12%;
+  margin-left: 0%;
   vertical-align: middle;
 }
 
 .featuredProject {
-  width: 100%;
-  padding: 0px 4%;
-  border-radius: 2%;
+  width: 102%;
 }
 
-.featuredProject img {
-  height: 49%;
-}
-
-.featuredProject h2 {
-  text-align: center;
-  color: white;
-  margin-bottom: 0;
-}
-
-.back h2 {
-  font-size: 33px;
-  margin-top: 21px;
-}
-
-.back p {
-  font-size: 24px;
-  padding-top: 11px;
-  padding-bottom: 4px;
-}
-
-.back ol {
-  font-size: 19px;
-  padding: 0px 52px;
-  margin-bottom: 18px;
-}
-
-.back a {
-  font-size: 21px;
-}
-
-.carousel {
-  width: 80%;
-  position: relative;
-  overflow: hidden;
-  height: 50%;
-  margin-left: 10%;
-}
 
 .card {
-
+  height: 80%;
 }
   .front {
-    width: 88%;
-    margin-left: 7%;
+
 }
 .project-container {
   display: flex;
-  flex-direction: row;
-  margin-left: 0%;
-  padding-right: 0;
+  flex-direction: column;
+}
+
+.pcard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project {
-
+  height: 38%;
+  display: flex;
+  justify-content: center;
 }
 .project img {
 
 }
 
+.project-info {
+  height: 91%;
+}
 
 .project-info h2 {
-  font-size: 39px;
-  margin-top: 27px;
+
 }
 
 .project-info p {
-  font-size: 17px;
-  padding-top: 10px;
+
 }
 
 .project-info a {
-  font-size: 15px;
-  margin: 0px 12px;
+
 }
 
 }
 
 /* ipad -------- */
 @media screen and  (max-width: 768px) {
-  .carousel {
-    height: 50%;
-}
-}
-
-/* Second Break ----------- */
-@media screen and  (max-width: 448px) {
-
-.profileName h1 {
-  font-size: 4em;
-}
-
-.profile P {
-  display: block;
-  font-size: 17px;
-  width: 80%;
-  padding-top: 15px;
-}
-
-.featuredProject img {
-  height: 65%;
-  width: 100%
-}
-.project-info {
-  height: 81%;
-}
-}
-
-@media screen and  (max-width: 414px) {
-
   .flex-container {
     display: flex;
-    padding-top: 4%;
     flex-direction: column;
+    justify-content: center;
   }
  
   .mySelf {
     width: 100%;
     padding: 0px 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 5% 0px;
 }
 
   .myself h2 {
     text-align: center;
     color: white;
-    margin-bottom: 0%;
-    font-size: 24px;
+    margin-bottom: 2%;
+}
+.mySelf div {
+  display: flex;
+  flex-direction: row;
 }
 
 .mySelf img {
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
   box-shadow: 9px 9px 9px 6px #150f0f9e;
-  margin-left: 25%;
+  margin-left: 0%;
   vertical-align: middle;
-  margin-top: 4%;
+  height: 30%;
 }
 
 .myself p {
   color: white;
-  width: 90%;
+  width: 59%;
   text-align: center;
-  margin-top: 0%;
   display: inline-block;
-  margin-left: 5%;
   vertical-align: middle;
-  font-size: 11px;
-}
-
-.featuredProject h2 {
-  text-align: center;
-  color: white;
-  margin-bottom: 5%;
-  font-size: 22px;
+  font-size: 18px;
+  margin: 0px 0px 0px 7%;
 }
 
 .featuredProject {
-  width: 100%;
-  padding: 0px 1%;
-  border-radius: 2%;
-  height: 340px;
-
+  width: 102%;
 }
 
-.back h2 {
-  margin-top: 3%;
-}
 
-.back p {
-  font-size: 13px;
-  text-align: center;
-  padding-left: 0%;
-  height: 20%;
-  position: relative;
-  left: 11%;
-  bottom: 5%;
-  width: 86%;
+.card {
+  height: 80%;
 }
-.back ol {
-  font-size: .1px;
-  margin-bottom: 53px;
-}
+  .front {
 
-.back a {
-  font-size: 12px;
-  margin: 0px 12px;
-}
-
-.carousel__item img {
-    width: 100%;
-    vertical-align: middle;
-    /* max-height: 82%; */
-    min-height: 34%;
 }
 .project-container {
   display: flex;
   flex-direction: column;
-  margin-left: 0%;
-  padding-right: 0;
 }
 
-.project img {
-  height: 90%;
+.pcard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
 .project {
-  width: 85%;
-  height: 40%;
-  margin: 8% 5% 1% 7%;
-  padding: 0 1%;
+  height: 38%;
+  display: flex;
+  justify-content: center;
 }
-.project info {
-  height: 90%
+
+.project-info {
+  height: 91%;
 }
 
 .project-info h2 {
-  font-size: 22px
+  font-size: 35px;
+}
+
+.project-info p {
+  font-size: 19px;
+}
+
+.project-info a {
+  font-size: 18px;
+}
+  .back h2 {
+    font-size: 35px;
+  }
+  
+  .back p {
+    font-size: 18px;
+  }
+  .back ol {
+    font-size: 14px;
+    margin-bottom: 23px;
+  }
+  
+  .back a {
+    font-size: 16px;
+  }
+}
+
+/* Second Break ----------- */
+
+
+@media screen and  (max-width: 414px) {
+
+  .profileName H1 {
+    font-size: 35px;
+  }
+
+.profileName h2 {
+  font-size: 18px;
+}
+
+  .flex-container {
+
+  }
+ 
+  .mySelf {
+
+}
+.mySelf div {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .myself h2 {
+    font-size: 20px;
+}
+
+.mySelf img {
+  width: 48%;
+  height: 25%;
+}
+
+.myself p {
+  width: 90%;
+  font-size: 12px;
+}
+
+.featuredProject h2 {
+  font-size: 20px;
+}
+
+.featuredProject {
+
+
+}
+
+.back h2 {
+
+}
+
+.back p {
+
+}
+.back ol {
+  font-size: 0px;
+}
+
+.back a {
+  font-size: 9px;
+  width: 30%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#portfolio h1 {
+  font-size: 25px;
+}
+.project img {
+
+}
+.project {
+
+}
+.project info {
+
+}
+
+.project-info h2 {
+  font-size: 20px;
 }
 
 .project-info p {
   font-size: 12px;
-  margin: 1px 0px 20px 0px;
-  padding: 8px 7px;
+  margin: 0px 0px 0px 0px;
 }
 
 .project-info a {
-  font-size: 11px;
-  margin: 0px 20px;
+  font-size: 9px;
+  width: 41%;
+  text-align: center;
+  margin: 0px 6% 0px 6%;
 }
   }
 
@@ -736,82 +792,68 @@ Media queries
 @media screen and  (max-width: 375px) {
   
 .rightside {
-  font-size: .8em;
+
 }
 
 .leftside {
-  font-size: .9em 
+
 }
 
   .quickIntro {
-    font-size: auto;
+
   }
 
   .profile h1 {
-    padding-top: 11%;
+
   }
 
   .profile img {
-    height: auto;
-    width: 49%;
+
 }
 .profile p {
-  display: block;
-  width: 90%;
-  font-size: 10px;
+
 }
 
 .gallery{
-  padding-left: 25%;
+
 }
 
 .gallery li {
-  width: 90%;
+
 }
 .container-flip {
-  margin: 0;
+
 }
 
 .featuredProject img {
-    width: 112%;
-    height: 50%;
-    margin-left: -20px;
+
 }
 .back {
-  font-size: xx-small;
+
 }
 .back ol {
-  display: hidden;
-  margin-bottom: 20px;
+
 }
 .back h2 {
-  font-size: 21px;
-  text-align: center;
-  margin-bottom: 2px;
+
 }
 
 .back p {
-  font-size: 11px;
-  position: relative;
-  left: 33px;
-  margin: 0;
-  height: 73px;
+
 }
 
 
 
 .project-info h2 {
-  margin-top: 10px;
+
 }
 
 .project-info p {
-  font-size: 12px;
-  margin: 1px 0px 20px 0px;
-  padding: 8px 7px;
+
 }
 
 .project-info a {
-  font-size: 10px;
+
 }
 
 } 
@@ -819,39 +861,29 @@ Media queries
 @media screen and  (max-width: 360px) {
 
 .featuredProject img {
-  height: 50%;
+
 }
 .back p {
-  font-size: 10px;
-  position: relative;
-  left: 15px;
-  margin: 0;
-  height: 73px;
-  width: 100%;
+
 }
 
 .back ol {
-  margin: 0px 0px 18px 0px;
+
 }
 
 .back a {
-  font-size: 9px;
-  margin: 33px 8px 0px 8px;
+
 }
 
 .project-info h2 {
-  font-size: 21px;
-  text-align: center;
-  margin-bottom: 2px;
+
 }
 
 .project-info p {
-  font-size: 10px;
-  margin: 5px 0px 11px 0px;
+
 }
 
 .project-info a {
-  font-size: 9px;
-  margin: 0px 10px;
+
 }
 } 
