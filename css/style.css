@@ -239,6 +239,7 @@ Page Profile
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border-radius: 30px;
 }
 .front {
   background-color: slategray;
@@ -369,13 +370,15 @@ border-radius: 30px;
   top: 0;
   margin: 3% 5%;
   padding: 0 1%;
-  height: 100%;
+  height: 85%;
   color: white;
   text-align: center;
   text-shadow: 2px 2px #000000;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  width: 85%;
+  left: 1px;
 }
 
 .project-info h2 {
@@ -412,12 +415,11 @@ Contact
 .five {
 	font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
-  background: url("/css/Pictures/Profile_landing.jpg");
+  background: linear-gradient(#474747de, #ba0000);
   width: 100vw;
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   
   padding: 0;
