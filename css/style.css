@@ -1047,10 +1047,10 @@ Cover
   font-size: 25px;
 }
 
-  .project-info p {
-    font-size: 15px;
-    padding: 1% 10px;
-    margin: 2% 0px 10% 0px;
+.project-info p {
+  font-size: 15px;
+  padding: 1% 10px;
+  margin: 2% 0px 3% 0px;
 }
 
 
@@ -1173,7 +1173,7 @@ Cover
   list-style: disc;
   text-align: left;
   font-size: 13px;
-  margin: 1% 0px 5% 0px;
+  margin: 1% 0px 1% 0px;
   padding: 0px 11% 0px 11%;
 }
 .links a {
@@ -1185,6 +1185,22 @@ Cover
     padding: 7px 0% 7px 0%;
     border-radius: 30px;
 }
+}
+
+@media screen and  (min-width: 500px) {
+
+  .back p {
+    font-size: 13px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 2%;
+}
+  
+  .back ol {
+    list-style: disc;
+    text-align: left;
+    font-size: 13px;
+    margin: 1% 0px 2% 0px;
+    padding: 0px 11% 0px 11%;
 }
 
 @media screen and  (min-width: 768px) { 
@@ -1205,6 +1221,7 @@ Cover
   height: 43%;
 }
 
+
 .mySelf h2 {
 text-align: center;
 color: white;
@@ -1213,6 +1230,13 @@ margin-top: 1px;
 font-size: 30px;
 }
 
+.mySelf img {
+  display: flex;
+  justify-content: center;
+  width: 29%;
+  border-radius: 50%;
+  margin: 0px 5% 0px 5px;
+}
 .mySelf p {
   display: flex;
   justify-content: center;
@@ -1361,7 +1385,7 @@ font-size: 30px;
 .featuredProject h2 {
   text-align: center;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   font-size: 40px;
   margin-top: 1px;
 }
