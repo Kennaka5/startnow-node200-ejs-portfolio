@@ -6,261 +6,982 @@ General
 /*************************
 Cover
 **************************/
-/* 
-.top {
- background-image: url("/css/Pictures/profile_cover.jpg");
-  width: 100vw;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 0;
-}  */
 
 .top {
-overflow: hidden;
-}
-
-a {
-  text-shadow: none;
-}
-
-
-#covertop {
-  min-width: 100%;
-  height: 100%;
-  border: 0;
-  background-attachment: fixed;
-  background-size: cover;
-  z-index: -100;
-  transform: scale(2);
-}
-
-/*************************
-Navigation
-**************************/
-.nav-list{
-  list-style-type: none;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
+  }
+  
+  a {
+    text-shadow: none;
+  }
+  
+  
+  #covertop {
+    min-width: 100%;
+    height: 100%;
+    border: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -100;
+    transform: scale(2);
+  }
+  
+  /*************************
+  Navigation
+  **************************/
+  .nav-list{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    text-align: center
+  }
+  
+  .nav-list li {
+    display: inline;
+    padding-right: 3%;
+    padding-left: 3%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .nav-list a {
+    color: white;
+    font-size: 13px;
+  }
+  
+  .nav-list li a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background: #f5f5f567;
+    border-radius: 25px;
+    padding: 6px;
+  }
+  
+  .profileName {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    margin-bottom: 1;
+    text-align: center;
+    color: white;
+    height: 40%
+  }
+  
+  .profileName h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .profileName h2 {
+    color: rgb(252, 252, 252);
+    letter-spacing: 3px;
+    padding-top: 7%;
+    font-family: 'Merienda', cursive;
+    font-style: bold;
+    font-size: 17px;
+  }
+  
+  .top input {
+    position: absolute;
+    background: black;
+    color: white;
+    bottom: 4%;
+    left: 47%;
+  }
+  
+  
+  
+  
+  /*************************
+  Page Profile
+  **************************/
+  .profile {
+    background-image: url("/css/Pictures/Profile_Background.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+  }
+  
+  .profile h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    display: block;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    padding-top: 4%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mySelf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .mySelf div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mySelf h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2%;
+    font-size: 25px;
+  }
+  
+  .mySelf img {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 1%;
+  }
+  
+  .mySelf p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 93%;
+    font-size: 9px;
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  
+   .featuredProject {
+    width: 100%;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 47%;
+    justify-content: start;
+  }
+  
+  .featuredProject h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+  }
+  
+  .featuredProject a {
+    background: black;
+    padding: 7px;
+    margin: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  /* .featuredProject img {
+    width: 100%;
+    box-shadow:  9px 9px 9px 6px #150f0f9e;
+  } */
+  /************************ new *******************/
+  
+  .featuredProject img {
+    width: 100%;
+    box-shadow:  9px 9px 9px 6px #150f0f9e;
+    height: 100%;
+    border-radius: 30px;
+  }
+  
+  .container-flip {
+    margin: 0px 0px 0px 0px;
+    width: 95%;
+    height: 100%;
+  }
+  
+  .card {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    height: 80%;
+    margin-top: 4%;
+  }
+  .front {
+    background-color: slategray;
+    border-radius: 2%;
+  }
+  
+  
+  .front, .back {
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 30px;
+  }
+  
+  .front:hover {
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 20px 1px #000;
+    border-radius: 30px;
+  }
+  
+  
+  
+  .back {
+    background: slategray;
+    transform: rotateY(180deg);
+    position: absolute;
+    /* bottom: 23em; */
+    height: 50%;
+    color: white;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    text-shadow: 2px 2px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .back h2 {
+    font-size: 29px;
+    margin-top: 7px;
+    position: relative;
+  }
+  
+  .back p {
+    font-size: 12px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 2%;
+  }
+  
+  .back ol {
+    list-style: disc;
+    text-align: left;
+    font-size: 0px;
+    margin-bottom: 0px;
+    padding: 0px 70px 0px 100px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  
+  }
+  
+  .links a {
+    background: black;
+    color: white;
+    font-size: 10px;
+    margin: 0px 1% 0px 1%;
+    width: 70%;
+    padding: 7px 1% 0px 1%;
+    border-radius: 30px;
+  }
+  
+  /*************************
+  Page: portfolio
+  **************************/
+  #portfolio {
+  background: linear-gradient(#010101, #474747de);
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  }
+  
+  #portfolio h1 {
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project {
+    width: 85%;
+    height: 45%;
+    margin: 3% 5%;
+    padding: 0 1%;
+  }
+  
+  .project img {
   width: 100%;
-  position: absolute;
-  top: 1px;
-  text-align: center
-}
-
-.nav-list li {
-  display: inline;
-  padding-right: 3px;
-  padding-left: 3%;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
-.centerNav {
-color:white;
-font-size: 20px;
-}
-
-
-
-.nav-list li a:hover {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  background: #f5f5f567;
-  border-radius: 25px;
-  padding: 6px;
-}
-
-.profileName {
-  position: absolute; 
-  left: 0;
-  top: 35%;
-  width: 100%;
-  margin-bottom: 1;
+  height: 100%;
+  border-radius: 30px;
+  }
+  
+  .pcard {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .project, .project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    flex-direction: column;
+  }
+  
+  .project-info {
+    background-color: slategray;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    margin: 3% 5%;
+    padding: 0 1%;
+    height: 85%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    left: 1px;
+  }
+  
+  .project-info h2 {
+    margin-top: 5%;
+    font-size: 25px;
+  }
+  
+  .project-info p {
+    font-size: 10px;
+    padding: 1% 10px;
+  } 
+  
+  .project-info div {
+    display: flex;
+    flex-direction: row
+  }
+  
+  .project-info a {
+    background: black;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 1% 0px 1%;
+    align-items: center;
+  }
+  
+  /*************************
+  Contact
+  **************************/
+  .five {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(#474747de, #ba0000);
+    width: 100vw;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 0;
+    border: green;
+  }
+  
+  h3 {
+    padding-top: 10%;
+    text-align: center; 
+    color: white;
+    font-family: 'Merienda', cursive;
+  }
+  
+  label {
+  color: white;
   text-align: center;
-  color: white;
-}
+  font-size: 15;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px
+  }
+  
+  input[type=submit]:hover {
+    background-color: #686868;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  /***********************************************************************************************
+  ***********************************************************************************************
+  Media queries
+  ***********************************************************************************************
+  ***********************************************************************************************/
 
-.profileName h1 {
-  font-size: 5em;
-  letter-spacing: 3px;
-  font-family: 'Merienda', cursive;
-  font-style: bold;
-}
-
-.profileName h2 {
-color: rgb(252, 252, 252);
-letter-spacing: 3px;
-padding-top: 50px;
-font-family: 'Merienda', cursive;
-font-style: bold;
-}
-
-.top input {
-  position: absolute;
-  background: black;
-  color: white;
-  bottom: 4%;
-  left: 47%;
-}
-
-
+  @media screen and  (min-width: 426px) {
 
 
 /*************************
-Page Profile
+Cover
 **************************/
-.profile {
-  background-image: url("/css/Pictures/Profile_Background.jpg");
+
+.top {
+  overflow: hidden;
+  }
+  
+  a {
+    text-shadow: none;
+  }
+  
+  
+  #covertop {
+    min-width: 100%;
+    height: 100%;
+    border: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -100;
+    transform: scale(2);
+  }
+  
+  /*************************
+  Navigation
+  **************************/
+  .nav-list{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    text-align: center
+  }
+  
+  .nav-list li {
+    display: inline;
+    padding-right: 3%;
+    padding-left: 3%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .nav-list a {
+    color: white;
+    font-size: 13px;
+  }
+  
+  .nav-list li a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background: #f5f5f567;
+    border-radius: 25px;
+    padding: 6px;
+  }
+  
+  .profileName {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    margin-bottom: 1;
+    text-align: center;
+    color: white;
+    height: 40%
+  }
+  
+  .profileName h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .profileName h2 {
+    color: rgb(252, 252, 252);
+    letter-spacing: 3px;
+    padding-top: 7%;
+    font-family: 'Merienda', cursive;
+    font-style: bold;
+    font-size: 17px;
+  }
+  
+  .top input {
+    position: absolute;
+    background: black;
+    color: white;
+    bottom: 4%;
+    left: 47%;
+  }
+  
+  
+  
+  
+  /*************************
+  Page Profile
+  **************************/
+  .profile {
+    background-image: url("/css/Pictures/Profile_Background.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+  }
+  
+  .profile h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    display: block;
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    padding-top: 4%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mySelf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .mySelf div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 2% 0% 2%;
+    margin: 0px 0px 5% 0px;
+  }
+  
+  .mySelf h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2%;
+    font-size: 25px;
+  }
+  
+  .mySelf img {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    border-radius: 50%;
+    margin: 0px 5% 0px 5px;
+  }
+  
+  .mySelf p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 93%;
+    font-size: 9px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  
+   .featuredProject {
+    width: 100%;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 47%;
+    justify-content: start;
+  }
+  
+  .featuredProject h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+  }
+  
+  .featuredProject a {
+    background: black;
+    padding: 7px;
+    margin: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+  }
+  
+  /* .featuredProject img {
+    width: 100%;
+    box-shadow:  9px 9px 9px 6px #150f0f9e;
+  } */
+  /************************ new *******************/
+  
+  .featuredProject img {
+    width: 100%;
+    box-shadow:  9px 9px 9px 6px #150f0f9e;
+    height: 100%;
+    border-radius: 30px;
+  }
+  
+  .container-flip {
+    margin: 0px 0px 0px 0px;
+    width: 95%;
+    height: 100%;
+  }
+  
+  .card {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    height: 80%;
+    margin-top: 4%;
+  }
+  .front {
+    background-color: slategray;
+    border-radius: 2%;
+  }
+  
+  
+  .front, .back {
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 30px;
+  }
+  
+  .front:hover {
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 20px 1px #000;
+    border-radius: 30px;
+  }
+  
+  
+  
+  .back {
+    background: slategray;
+    transform: rotateY(180deg);
+    position: absolute;
+    /* bottom: 23em; */
+    height: 50%;
+    color: white;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    text-shadow: 2px 2px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .back h2 {
+    font-size: 29px;
+    margin-top: 7px;
+    position: relative;
+  }
+  
+  .back p {
+    font-size: 12px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 2%;
+  }
+  
+  .back ol {
+    list-style: disc;
+    text-align: left;
+    font-size: 0px;
+    margin-bottom: 0px;
+    padding: 0px 70px 0px 100px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  
+  }
+  
+  .links a {
+    background: black;
+    color: white;
+    font-size: 10px;
+    margin: 0px 1% 0px 1%;
+    width: 70%;
+    padding: 7px 1% 0px 1%;
+    border-radius: 30px;
+  }
+  
+  /*************************
+  Page: portfolio
+  **************************/
+  #portfolio {
+  background: linear-gradient(#010101, #474747de);
+  background-size: 100%;
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 0;
-}
-
-.profile h1 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  font-family: 'Merienda', cursive;
-  padding-top: 3%;
-  padding-bottom: 4%;
-  display: block;
-}
-
-
-.flex-container {
-  display: flex;
-  padding-top: 4%;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.mySelf {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
-}
-
-.mySelf div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mySelf h2 {
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 40px;
-  margin-bottom: 2%;
-}
-
-.mySelf img {
-  display: flex;
-  justify-content: center;
-  width: 40%;
-  border-radius: 50%;
-  margin-bottom: 1%;
-}
-
-.mySelf p {
-  display: flex;
-  justify-content: center;
-  color: white;
-  width: 74%;
-  font-size: 20px;
-  text-align: center;
-}
-
-
- .featuredProject {
-  width: 64%;
-  border-radius: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.featuredProject h2 {
-  text-align: center;
-  color: white;
-  margin-bottom: 2%;
-  font-size: 40px;
-}
-
-.featuredProject a {
-  background: black;
-  padding: 7px;
-  margin: 0px 5px 0px 5px;
-  text-decoration: none;
-  color: white;
-  border-radius: 12px;
-}
-
-/* .featuredProject img {
+  }
+  
+  #portfolio h1 {
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project {
+    width: 85%;
+    height: 45%;
+    margin: 3% 5%;
+    padding: 0 1%;
+  }
+  
+  .project img {
   width: 100%;
-  box-shadow:  9px 9px 9px 6px #150f0f9e;
-} */
-/************************ new *******************/
-.featuredProject div {
-  display: flex;
-  justify-content: center
-}
-
-.featuredProject img {
-  width: 100%;
-  box-shadow:  9px 9px 9px 6px #150f0f9e;
   height: 100%;
   border-radius: 30px;
+  }
+  
+  .pcard {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .project, .project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    flex-direction: column;
+  }
+  
+  .project-info {
+    background-color: slategray;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    margin: 3% 5%;
+    padding: 0 1%;
+    height: 85%;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    left: 1px;
+  }
+  
+  .project-info h2 {
+    margin-top: 5%;
+    font-size: 25px;
+  }
+  
+  .project-info p {
+    font-size: 10px;
+    padding: 1% 10px;
+  } 
+  
+  .project-info div {
+    display: flex;
+    flex-direction: row
+  }
+  
+  .project-info a {
+    background: black;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 1% 0px 1%;
+    align-items: center;
+  }
+  
+  /*************************
+  Contact
+  **************************/
+  .five {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(#474747de, #ba0000);
+    width: 100vw;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 0;
+    border: green;
+  }
+  
+  h3 {
+    padding-top: 10%;
+    text-align: center; 
+    color: white;
+    font-family: 'Merienda', cursive;
+  }
+  
+  label {
+  color: white;
+  text-align: center;
+  font-size: 15;
+  font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px
+  }
+  
+  input[type=submit]:hover {
+    background-color: #686868;
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+    .mySelf img {
+      display: flex;
+      justify-content: center;
+      width: 41%;
+      border-radius: 50%;
+      margin: 0px 5% 0px 5px;
+  } 
+    
+
+
+  @media screen and  (min-width: 495px) {
+  
+    .mySelf p {
+      display: flex;
+      justify-content: center;
+      color: white;
+      width: 93%;
+      font-size: 12px;
+      text-align: center;
+      margin: 0px 0px 0px 0px;
+  }
+
+  .mySelf img {
+    display: flex;
+    justify-content: center;
+    width: 41%;
+    border-radius: 50%;
+    margin: 0px 5% 0px 5px;
+} 
+
+  .card {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    height: 95%;
+    margin-top: 4%;
 }
-
-.container-flip {
-  margin: 0px 2% 0px 0px;
-  width: 95%;
-  height: 50%;
-}
-
-.card {
-  transition: transform 2s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  background: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 30px;
-}
-.front {
-  background-color: slategray;
-  border-radius: 2%;
-}
-
-
-.front, .back {
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-}
-
-.front:hover {
-  bottom: 2px;
-  left: 2px;
-  box-shadow: 0px 0px 20px 1px #000;
-  border-radius: 30px;
-}
-
-
 
 .back {
   background: slategray;
@@ -276,91 +997,30 @@ Page Profile
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-}
-
-.back h2 {
-  font-size: 64px;
-  margin-top: 7px;
+  justify-content: flex-start;
 }
 
 .back p {
-  font-size: 26px;
+  font-size: 15px;
   padding: 0px 10px 0px 10px;
+  margin-bottom: 2%;
 }
 
 .back ol {
   list-style: disc;
   text-align: left;
-  font-size: 24px;
-  margin-bottom: 60px;
-  padding: 0px 70px 0px 100px;
+  font-size: 13px;
+  margin: 1% 0px 5% 0px;
+  padding: 0px 11% 0px 11%;
 }
-
-.back div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;  
-}
-
-.back   a {
-  font-size: 30px;
-  margin: 0px 55px;
-}
-
-/*************************
-Page: portfolio
-**************************/
-#portfolio {
-background: linear-gradient(#010101, #474747de);
-background-size: 100%;
-width: 100vw;
-height: 100vh;
-}
-
-#portfolio h1 {
-  padding-top: 5%;
-  text-align: center;
-  color: white;
-  margin: 0;
-  font-family: 'Merienda', cursive;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.project {
-  width: 85%;
-  height: 45%;
-  margin: 3% 5%;
-  padding: 0 1%;
-}
-
-.project img {
-width: 100%;
-height: 100%;
-border-radius: 30px;
-}
-
-.pcard {
-  transition: transform 2s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  background: none;
-  display: flex;
-  justify-content: center;
-}
-
-
-.project, .project-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backface-visibility: hidden;
-  flex-direction: column;
+.links a {
+    background: black;
+    color: white;
+    font-size: 13px;
+    margin: 0px 25px 0px 25px;
+    min-width: 57%;
+    padding: 7px 0% 7px 0%;
+    border-radius: 30px;
 }
 
 .project-info {
@@ -379,17 +1039,20 @@ border-radius: 30px;
   flex-direction: column;
   width: 85%;
   left: 1px;
+  justify-content: flex-start;
 }
 
 .project-info h2 {
-  margin-top: 37px;
-  font-size: 50px;
+  margin-top: 5%;
+  font-size: 25px;
 }
 
-.project-info p {
-  font-size: 30px;
-  padding: 23px 10px;
-} 
+  .project-info p {
+    font-size: 15px;
+    padding: 1% 10px;
+    margin: 2% 0px 10% 0px;
+}
+
 
 .project-info div {
   display: flex;
@@ -402,511 +1065,568 @@ border-radius: 30px;
   text-decoration: none;
   color: white;
   border-radius: 12px;
-  font-size: 25px;
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
   margin: 0px 1% 0px 1%;
-  align-items: center
+  align-items: center;
 }
 
-/*************************
-Contact
-**************************/
-.five {
-	font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(#474747de, #ba0000);
-  width: 100vw;
-  min-height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+  @media screen and  (min-width: 650px) {
+
+    .profileName h1 {
+      font-size: 50px;
+      letter-spacing: 3px;
+      font-family: 'Merienda', cursive;
+  }
+    
+  .profileName h2 {
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 9%;
+    font-family: 'Merienda', cursive;
+    font-style: bold;
+    font-size: 54px;
+}
+
+    .nav-list {
+      list-style-type: none;
+      text-decoration: none;
+      margin: 3% 0px 0px 0px;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      position: absolute;
+      top: 1px;
+      text-align: center;
+  }
+    
+    .nav-list li {
+      display: inline;
+      padding-right: 3%;
+      padding-left: 3%;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .nav-list a {
+      color: white;
+      font-size: 16px;
+      margin: 0% 0% 0px 0px;
+    }
+    
+    .nav-list li a:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      background: #f5f5f567;
+      border-radius: 25px;
+      padding: 6px;
+    }
   
-  padding: 0;
-  border: green;
+    .mySelf p {
+      display: flex;
+      justify-content: center;
+      color: white;
+      width: 93%;
+      font-size: 15px;
+      text-align: center;
+      margin: 0px 0px 0px 0px;
+  }
+  .card {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    height: 95%;
+    margin-top: 4%;
 }
 
-h3 {
-  padding-top: 10%;
-  text-align: center; 
+.back {
+  background: slategray;
+  transform: rotateY(180deg);
+  position: absolute;
+  /* bottom: 23em; */
+  height: 50%;
   color: white;
-  font-family: 'Merienda', cursive;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  text-shadow: 2px 2px #000000;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-label {
-color: white;
-text-align: center;
-font-size: 15;
-font-family: 'Open Sans', sans-serif;
+.back p {
+  font-size: 15px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 2%;
 }
 
-input[type=text], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.back ol {
+  list-style: disc;
+  text-align: left;
+  font-size: 13px;
+  margin: 1% 0px 5% 0px;
+  padding: 0px 11% 0px 11%;
+}
+.links a {
+    background: black;
+    color: white;
+    font-size: 13px;
+    margin: 0px 25px 0px 25px;
+    min-width: 70%;
+    padding: 7px 0% 7px 0%;
+    border-radius: 30px;
+}
 }
 
-input[type=submit] {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  width: 100%;
-  cursor: pointer;
-  font-size: 20px
-}
-
-input[type=submit]:hover {
-  background-color: #686868;
-}
-
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
-/*************************
-Media queries
-**************************/
-@media screen and  (max-width: 1366px) {
-  .back h2 {
-  }
+@media screen and  (min-width: 768px) { 
   
-  .back p {
-  }
-  .back ol {
-  }
-  
-  .back a {
-
-  }
-  
-  .carousel__item img {
-
-  }
-  .project-container {
-  }
-  
-  .project img {
-  }
-  .project {
-  }
-  .project info {
-  }
-  
-  .project-info h2 {
-  }
-  
-  .project-info p {
-  }
-  
-  .project-info a {
-  }
-}
-
-@media screen and  (max-width: 1024px) {
   .flex-container {
     display: flex;
+    padding-top: 2%;
     flex-direction: column;
-    justify-content: center;
-  }
- 
-  .mySelf {
-    width: 100%;
-    padding: 0px 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
-  .myself h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 2%;
+.mySelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 43%;
 }
 
-.mySelf img {
-  width: 40%;
-  border-radius: 50%;
-  box-shadow: 9px 9px 9px 6px #150f0f9e;
-  margin-left: 0%;
-  vertical-align: middle;
+.mySelf h2 {
+text-align: center;
+color: white;
+margin-bottom: 15px;
+margin-top: 1px;
+font-size: 30px;
 }
 
-.myself p {
+.mySelf p {
+  display: flex;
+  justify-content: center;
   color: white;
-  width: 69%;
+  width: 93%;
+  font-size: 17px;
   text-align: center;
-  margin-top: 1%;
-  display: inline-block;
-  margin-left: 0%;
-  vertical-align: middle;
+  margin: 0px 0px 0px 0px;
 }
 
-.featuredProject {
-  width: 102%;
+.featuredProject h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15px;
 }
-
 
 .card {
-  height: 80%;
-}
-  .front {
-
-}
-.project-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.pcard {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  background: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border-radius: 30px;
+  height: 95%;
+  margin-top: 1%;
+}
 }
 
-.project {
-  height: 38%;
-  display: flex;
-  justify-content: center;
-}
-.project img {
-
-}
-
-.project-info {
-  height: 91%;
-}
-
-.project-info h2 {
-
-}
-
-.project-info p {
-
-}
-
-.project-info a {
-
-}
-
-}
-
-/* ipad -------- */
-@media screen and  (max-width: 768px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
- 
-  .mySelf {
-    width: 100%;
-    padding: 0px 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 0px 5% 0px;
-}
-
-  .myself h2 {
+@media screen and  (min-width: 1024px) {
+  
+  .mySelf h2 {
     text-align: center;
     color: white;
-    margin-bottom: 2%;
+    margin-bottom: 8%;
+    margin-top: 1px;
+    font-size: 40px;
 }
-.mySelf div {
+
+  .mySelf img {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 50%;
+    margin: 0px 5% 0px 5px;
+}
+.mySelf p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 93%;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+.container-flip {
+  margin: 5px 0px 0px 0px;
+  width: 85%;
+  height: 100%;
+}
+
+#portfolio h1 {
+  padding-top: 7%;
+  text-align: center;
+  color: white;
+  margin: 0px 0px 9% 0px;
+  font-family: 'Merienda', cursive;
+  font-size: 35px;
+}
+
+.project-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+@media screen and  (min-width: 1024px) {
+
+.mySelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  height: 95%;
+}
+
+.mySelf h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 7%;
+  margin-top: 1px;
+  font-size: 40px;
+}
+
+.mySelf div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 2% 0% 2%;
+  margin: 0px 0px 5% 0px;
 }
 
 .mySelf img {
-  width: 40%;
-  border-radius: 50%;
-  box-shadow: 9px 9px 9px 6px #150f0f9e;
-  margin-left: 0%;
-  vertical-align: middle;
-  height: 30%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 50%;
+    margin: 0px 5% 4px 5%;
 }
 
-.myself p {
+.mySelf p {
+  display: flex;
+  justify-content: center;
   color: white;
-  width: 59%;
+  width: 93%;
+  font-size: 16px;
   text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 18px;
-  margin: 0px 0px 0px 7%;
+  margin: 5% 0px 0px 0px;
+}
+
+.flex-container {
+  display: flex;
+  padding-top: 2%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .featuredProject {
-  width: 102%;
-}
-
-
-.card {
-  height: 80%;
-}
-  .front {
-
-}
-.project-container {
+  width: 100%;
+  border-radius: 2%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 50%;
+  justify-content: start;
+}
+
+
+.featuredProject h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-top: 1px;
+}
+
+.container-flip {
+  margin: 5px 0px 0px 0px;
+  width: 95%;
+  height: 100%;
+}
+} 
+
+@media screen and  (min-width: 1366px) {
+
+.back h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 40px;
+    margin-top: 12px;
+}
+
+.back p {
+    font-size: 23px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 2%;
+}
+
+.back ol {
+  list-style: disc;
+  text-align: left;
+  font-size: 20px;
+  margin: 1% 0px 5% 0px;
+  padding: 0px 11% 0px 11%;
+  width: 100%;
+}
+
+#portfolio h1 {
+  padding-top: 7%;
+  text-align: center;
+  color: white;
+  margin: 0px 0px 9% 0px;
+  font-family: 'Merienda', cursive;
+  font-size: 35px;
 }
 
 .pcard {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  background: none;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  width: 50%;
 }
 
 .project {
-  height: 38%;
-  display: flex;
-  justify-content: center;
+  width: 85%;
+  height: 45%;
+  margin: 3% 5%;
+  padding: 0 1%;
 }
 
 .project-info {
-  height: 91%;
+  background-color: slategray;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  margin: 3% 5%;
+  padding: 0 1%;
+  height: 85%;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  left: 1px;
+  justify-content: flex-start;
 }
 
 .project-info h2 {
+  margin-top: 5%;
   font-size: 35px;
 }
 
 .project-info p {
-  font-size: 19px;
+  font-size: 22px;
+  padding: 1% 10px;
+  margin: 3% 0px 6% 0px;
 }
 
 .project-info a {
-  font-size: 18px;
-}
-  .back h2 {
-    font-size: 35px;
-  }
-  
-  .back p {
-    font-size: 18px;
-  }
-  .back ol {
-    font-size: 14px;
-    margin-bottom: 23px;
-  }
-  
-  .back a {
-    font-size: 16px;
-  }
-}
-
-/* Second Break ----------- */
-
-
-@media screen and  (max-width: 414px) {
-
-  .nav-list li {
-    font-size: 8px;
-    margin: 0px 2% 0px 2%;
-  }
-  
-  .centerNav {
-    color: white;
-    font-size: 15px;
-  }
-
-  .profileName H1 {
-    font-size: 35px;
-  }
-
-.profileName h2 {
-  font-size: 18px;
-}
-
-  .flex-container {
-
-  }
- 
-  .mySelf {
-
-}
-.mySelf div {
-  flex-direction: column;
-  justify-content: center;
+  background: black;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1% 0px 1%;
   align-items: center;
 }
-  .myself h2 {
-    font-size: 20px;
 }
 
-.mySelf img {
-  width: 48%;
-  height: 25%;
+@media screen and  (min-width: 1440px) {
+
+.card {
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+    height: 100%;
+    margin-top: 1%;
 }
 
-.myself p {
-  width: 90%;
-  font-size: 12px;
+.back p {
+  font-size: 19px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 1px;
 }
 
-.featuredProject h2 {
-  font-size: 20px;
+.back ol {
+  list-style: disc;
+  text-align: left;
+  font-size: 16px;
+  margin: 1% 0px 5% 0px;
+  padding: 0px 11% 0px 11%;
+  width: 100%;
+}
+
+.project-info h2 {
+    margin-top: 2%;
+    font-size: 35px;
+}
+
+.project-info p {
+  font-size: 19px;
+  padding: 1% 10px;
+  margin: 3% 0px 6% 0px;
+}
+}
+
+@media screen and  (min-width: 2436px) {
+
+.nav-list a {
+    color: white;
+    font-size: 38px;
+    margin: 0% 0% 0px 0px;
+}
+
+.profileName h1 {
+  font-size: 105px;
+  letter-spacing: 3px;
+  font-family: 'Merienda', cursive;
+}
+
+.profileName h2 {
+color: rgb(252, 252, 252);
+letter-spacing: 3px;
+padding-top: 7%;
+font-family: 'Merienda', cursive;
+font-style: bold;
+font-size: 30px;
+}
+
+.mySelf {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 49%;
+  height: 96%;
+}
+
+.mySelf p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 93%;
+  font-size: 28px;
+  text-align: center;
+  margin: 5% 0px 0px 0px;
 }
 
 .featuredProject {
-
-
+  width: 100%;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 66%;
+  justify-content: start;
 }
 
 .back h2 {
-
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 80px;
+  margin-top: 12px;
 }
 
 .back p {
-
+  font-size: 36px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 1px;
 }
+
 .back ol {
-  font-size: 0px;
+  list-style: disc;
+  text-align: left;
+  font-size: 33px;
+  margin: 1% 0px 5% 0px;
+  padding: 0px 11% 0px 11%;
+  width: 100%;
 }
 
-.back a {
-  font-size: 9px;
-  width: 30%;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: column;
-
+.links a {
+  background: black;
+  color: white;
+  font-size: 31px;
+  margin: 0px 25px 0px 25px;
+  min-width: 70%;
+  padding: 7px 0% 7px 0%;
+  border-radius: 30px;
 }
 
 #portfolio h1 {
-  font-size: 25px;
-}
-.project img {
-
-}
-.project {
-
-}
-.project info {
-
-}
-
-.project-info h2 {
-  font-size: 20px;
-}
-
-.project-info p {
-  font-size: 12px;
-  margin: 0px 0px 0px 0px;
-}
-
-.project-info a {
-  font-size: 9px;
-  width: 41%;
+  padding-top: 7%;
   text-align: center;
-  margin: 0px 6% 0px 6%;
-}
-  }
-
-/* iPhone 5 ----------- */
-@media screen and  (max-width: 375px) {
-  
-.mySelf {
-
-}
-
-.mySelf h2 {
-
-}
-
-.mySelf img {
-  width: 46%;
-  height: 24%;
-}
-.mySelf p {
-font-size: 10px;
-}
-
-.featuredProject{
-
-}
-
-.featuredProject img {
-
-}
-
-.container-flip {
-
-}
-
-.card {
-  height: 71%;
-}
-
-.back {
-
-}
-.back h2 {
-
-}
-
-.back p {
-  font-size: 13px;
-}
-
-.back ol {
-
-}
-
-.project-info {
-
+  color: white;
+  margin: 0px 0px 4% 0px;
+  font-family: 'Merienda', cursive;
+  font-size: 35px;
 }
 
 .project-info h2 {
-margin-top: 5px;
+  margin-top: 2%;
+  font-size: 50px;
 }
-
+ 
 .project-info p {
-  padding: 19px 0px;
+  font-size: 32px;
+  padding: 1% 10px;
+  margin: 3% 0px 4% 0px;
 }
 
 .project-info a {
-
+  background: black;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1% 0px 1%;
+  align-items: center;
 }
 
-} 
-
-@media screen and  (max-width: 360px) {
-
-.featuredProject img {
-
 }
-.back p {
-
-}
-
-.back ol {
-
-}
-
-.back a {
-
-}
-
-.project-info h2 {
-
-}
-
-.project-info p {
-
-}
-
-.project-info a {
-
-}
-} 
